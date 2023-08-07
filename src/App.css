@@ -1,0 +1,729 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.history-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+/* .history:hover {
+  background-color: #091e4224;
+} */
+.history-name {
+  font-size: 14px;
+}
+.nav-item:hover {
+  background-color: #091e4224;
+}
+.btn-add-table:hover {
+  background-color: #091e4224;
+}
+.sidebar-btn:hover {
+  background-color: #091e4224;
+}
+.container {
+  height: 100vh;
+}
+.sidebar {
+  width: 280px;
+  margin: 0 !important;
+  height: 100vh;
+}
+.img-table {
+  width: 35px !important;
+  height: 30px !important;
+}
+.btn-add-table {
+  max-width: 540px;
+}
+.header {
+  background: url(https://images.ctfassets.net/rz1oowkt5gyp/7lTGeXbBRNRLaVk2MdBjtJ/99c266ed4cb8cc63bd0c388071f01ff6/white-wave-bg.svg)
+      center bottom -0.5px / 100% 14% no-repeat scroll padding-box border-box,
+    linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto
+      repeat scroll padding-box border-box rgb(82, 67, 170);
+  background-blend-mode: normal, normal;
+  color: rgb(255, 255, 255);
+}
+@keyframes parabol {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.sidebar-project {
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  background-color: #ece8f0;
+  width: 280px;
+  /* opacity: 0.7; */
+}
+
+.navbar-home {
+  /* background-image: linear-gradient(0, #f7ccf1, #d5b2f7); */
+  /* position: fixed;
+  width: 100%; */
+  background-color: hsla(206, 13.7%, 10%, 0.9);
+  color: #ffff;
+  height: 50px;
+  /* position: fixed;
+  width: 100%;
+  z-index: 1000; */
+}
+/* .content-ws {
+  margin-top: 100px;
+}
+.sidebar {
+  margin-top: 15px !important;
+} */
+.btn-create-board {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+.btn-create-board:hover {
+  background-color: #091e4224;
+}
+.btn-create-dropdown {
+  position: absolute;
+  transition: all ease 0.5s;
+  inset: 0 auto auto 0 !important;
+  width: 300px;
+}
+.img-create-board {
+  background-image: url(https://images.unsplash.com/photo-1688909987766-8797b4f909b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDY2fDB8MXxjb2xsZWN0aW9ufDF8MzE3MDk5fHx8fHwyfHwxNjg5MDM2MTYyfA&ixlib=rb-4.0.3&q=80&w=400);
+  width: 200px;
+  height: 120px;
+}
+.title_input {
+  height: 35px;
+}
+/* .body-img {
+  background-image: linear-gradient(0, #f7ccf1, #d5b2f7);
+} */
+
+.profile-img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.profile-menu {
+  position: absolute;
+  inset: 40px auto auto -110px !important;
+}
+.modal-workingSpace {
+  align-items: center;
+  background-image: url(https://trello.com/assets/df0d81969c6394b61c0d.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 600px;
+}
+.content-board {
+  /* background-image: url(https://carback.vn/wp-content/uploads/2019/08/hagiang.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; */
+  background-color: antiquewhite;
+}
+.board:hover {
+  cursor: pointer;
+}
+.board {
+  height: 100px;
+  width: 200px;
+}
+.create-list {
+  height: 89px;
+  width: 272px;
+}
+.input-create-list {
+  height: 30px;
+}
+.list {
+  width: 273px;
+}
+.create-board {
+  height: 35px;
+}
+.create-card {
+  width: 273px;
+}
+.card-modal {
+  max-width: 600px;
+}
+.card-modal-content {
+  width: 740px;
+}
+.card-modal-body {
+  width: 500px;
+}
+.create-tag {
+  width: 200px;
+}
+.content {
+  width: 420px;
+}
+.history-project {
+  height: 100px;
+  width: 200px;
+}
+.working-space {
+  max-width: 1200px;
+}
+.working-space-content {
+  width: 1200px;
+  height: 688px;
+}
+.working-space-name {
+  width: 600px;
+}
+.working-space-input {
+  height: 50px;
+}
+.working-space-des {
+  height: 135px;
+}
+.header-project {
+  background-color: #ece8f0 !important;
+  opacity: 0.95;
+  z-index: 1000;
+}
+.showModal {
+  z-index: 1000;
+  position: absolute;
+  top: 16px;
+  right: 400px;
+  left: 0;
+  bottom: 0;
+}
+.card-modal-content {
+  border-radius: 15px !important;
+  background-color: rgb(255, 255, 255);
+}
+.modal-body-board {
+  height: 70vh !important;
+  overflow-y: scroll;
+
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.board-trello {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.input-create-card {
+  height: 50px;
+  margin-bottom: 5px;
+  padding: 6px;
+}
+.input-dis {
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+}
+.input-comment {
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+}
+.list-task {
+  width: 300px;
+  border-radius: 15px;
+}
+.input-list-task {
+  height: 35px;
+  padding: 8px;
+}
+/* .home {
+  background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1438x1920/5c52999be6e9d59846fed8bda407851d/photo-1655679152783-f4d22c72264a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.progress {
+  height: 8px;
+}
+
+.tasks:hover {
+  cursor: pointer;
+  background-color: #091e4224;
+}
+
+.input-date {
+  height: 40px;
+}
+.date-time {
+  border-radius: 15px;
+}
+.table-project {
+  border-radius: 15px;
+  padding: 12px;
+  width: 1220px;
+  margin: 20px;
+}
+/* .table-body {  
+  width: 100% !important;
+  height: 660px;
+  overflow-y: scroll;
+} */
+.member-input {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.create-workingSpace {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.update-tag {
+  position: absolute;
+  left: -132px;
+  background-color: white;
+}
+.input-update-tag {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 12px;
+}
+.tag-title {
+  margin-left: 83px !important;
+}
+
+.list-member {
+  border-radius: 15px;
+}
+.list-member-input {
+  height: 40px;
+  padding: 8px;
+}
+.form-select {
+  width: 150px;
+}
+
+.modal-share {
+  width: 600px;
+  left: -50px;
+  top: 230px;
+}
+.btn-background {
+  width: 60px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-background:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.board {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.member-list {
+  width: 300px;
+  border-radius: 15px;
+}
+.search-user {
+  position: relative;
+}
+.show-user-search {
+  display: block;
+  position: absolute;
+  top: 124px;
+  background-color: white;
+  padding: 10px;
+  width: 265px;
+  border-radius: 10px;
+}
+.boards {
+  width: 100% !important;
+  height: 384px !important ;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.boards::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+.create-member-loading {
+  height: 35px;
+}
+.scale-loader {
+  color: #000;
+}
+
+.admin-image {
+  position: relative;
+}
+.admin-icon {
+  position: absolute;
+  background-image: url(https://trello.com/assets/88a4454280d68a816b89.png);
+  width: 16px;
+  height: 18px;
+  right: 158px;
+  bottom: 10px;
+}
+.tag {
+  width: 300px;
+  border-radius: 15px;
+}
+.tag-item {
+  width: 100%;
+  height: 40px;
+}
+.btn-edit-tag {
+  font-size: 12px;
+}
+.search-user {
+  overflow-y: scroll;
+  height: 80px;
+  overflow-x: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.search-user::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.user-email-search {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.loading-home {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+}
+.btn-bgColor {
+  width: 55px;
+  height: 37px;
+}
+.btn-ws:hover {
+  background-color: #091e4224;
+}
+.result {
+  color: red;
+}
+.charAt {
+  font-weight: 500;
+
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.font {
+  font-weight: 500;
+}
+.member-btn-task {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-board {
+  width: 25px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+.btn-filter {
+  position: relative;
+}
+
+.filter-dropdown {
+  width: 370px;
+  position: absolute;
+  left: -136px !important;
+  top: 46px !important;
+  border-radius: 10px;
+}
+.member-filter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.select-filter {
+  width: 100% !important;
+  position: relative;
+}
+.icon-select {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+}
+.btn-show-member {
+  position: relative;
+}
+.member-filter-input {
+  position: absolute;
+  bottom: 68px;
+  right: 12px;
+  background-color: white;
+  border-radius: 15px;
+  width: 335px;
+}
+.member-name {
+  cursor: pointer;
+  text-overflow: clip !important;
+}
+.input-member-cursor:hover {
+  cursor: pointer;
+}
+.btn-delete-ws {
+  width: 200px;
+  border-radius: 15px;
+}
+.board-name {
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chart {
+  width: 500px !important;
+  height: 500px !important;
+}
+.search-user-ws {
+  height: 35px;
+}
+
+/* scrool */
+.scrollbar {
+  float: left;
+  height: 70px;
+  width: 65px;
+
+  overflow-y: scroll;
+}
+
+.scrollbar-pink::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-pink::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-pink::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #edcfd9;
+}
+
+.scrollbar-indigo {
+  scrollbar-color: #3f51b5 #f5f5f5;
+}
+
+.scrollbar-indigo::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-indigo::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-indigo::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #3f51b5;
+}
+
+.scrollbar-black {
+  scrollbar-color: #000 #f5f5f5;
+}
+
+.scrollbar-black::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-black::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+}
+
+.scrollbar-lady-lips {
+  scrollbar-color: #fad9da #f5f5f5;
+}
+
+.scrollbar-lady-lips::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-lady-lips::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-lady-lips::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff9a9e),
+    color-stop(99%, #fecfef),
+    to(#fecfef)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+}
+
+.scrollbar-near-moon {
+  scrollbar-color: #b490ca #f5f5f5;
+}
+
+.scrollbar-near-moon::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-near-moon::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-near-moon::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#5ee7df),
+    to(#b490ca)
+  );
+  background-image: -webkit-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.bordered-pink::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border: 1px solid #ec407a;
+}
+
+.bordered-pink::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: none;
+}
+
+.bordered-indigo::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border: 1px solid #3f51b5;
+}
+
+.bordered-indigo::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: none;
+}
+
+.bordered-black::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border: 1px solid #000;
+}
+
+.bordered-black::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: none;
+}
+
+.square::-webkit-scrollbar-track {
+  border-radius: 0 !important;
+}
+
+.square::-webkit-scrollbar-thumb {
+  border-radius: 0 !important;
+}
+
+.thin::-webkit-scrollbar {
+  width: 6px;
+}

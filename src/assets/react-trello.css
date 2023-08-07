@@ -1,0 +1,32 @@
+.react-trello-lane {
+  background-color: #f1f2f4 !important;
+  border: 1px solid #cccc;
+  border-radius: 15px !important;
+}
+
+.react-trello-lane > header {
+  margin-top: 8px;
+}
+.react-trello-lane textarea {
+  pointer-events: none;
+}
+.react-trello-card {
+  background-color: #f1f2f4;
+  border: 1px solid #cccc;
+  height: 40px;
+  border-radius: 15px !important;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.react-trello-card header span:nth-child(2) textarea {
+  display: none !important;
+}
+
+.react-trello-card div textarea {
+  display: none !important;
+}
+
+.react-trello-board {
+  background-color: transparent;
+}
